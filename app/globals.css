@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #16213e;
+  --cream: #fbf6ec;
+  --marigold: #f4a73c;
+  --teal: #1f6f6b;
+  --crimson: #d6455d;
+  --line: #e4dbc8;
+}
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-cream: var(--cream);
+  --color-marigold: var(--marigold);
+  --color-teal: var(--teal);
+  --color-crimson: var(--crimson);
+  --color-line: var(--line);
+  --font-display: var(--font-fraunces);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-plex-mono);
+}
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+
+/* Punch hole on the badge-style cards */
+.badge-punch {
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 28px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--ink);
+  opacity: 0.15;
+}
+
+.font-display {
+  font-family: var(--font-fraunces);
+}
+.font-mono {
+  font-family: var(--font-plex-mono);
+}
